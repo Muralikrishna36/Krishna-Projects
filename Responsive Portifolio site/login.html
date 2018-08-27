@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="index.html">
+        <link rel="stylesheet" type="text/css" href="newpassword.html">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Krishna">
+</head>
+<body>
+    <div id="login-page">
+             <h3 style="color:#008ae6;font-size:20px"><span class='notbold'> Log-in Now</span></h3>  
+             <form name="login" >
+             <input type="email" style="height:20px;width:250px" name="email" placeholder="Email*"/><br>
+             <input type="password" style="height:20px;width:250px" name="password" placeholder="Password*"/>
+             </form>
+             <button type="submit" name="createaccount-button" onclick="myFunction2()" style="height:35px;width:150px;">Log-in</button>
+             <script> 
+                    function myFunction2()
+                    {
+                        var a = document.forms["login"]["email"].value;
+                        var b = document.forms["login"]["password"].value;
+                        if (a == "" || b == "" ) 
+                        {
+                        alert("Required fields must be filled out");
+                        return false;
+                        }
+
+                        else      
+                        {
+                            alert("Welcome!!");
+                        }
+                    }
+             </script>
+    </div>
+    </body>
+</html>

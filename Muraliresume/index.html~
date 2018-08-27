@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Krishna M - Student</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-144x144-precomposed.png">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+  <script src="js/vendor/jquery.hashchange.min.js"></script>
+  <script src="js/vendor/jquery.easytabs.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <!--[if lt IE 9]> onload="startTime()"
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+      <![endif]-->
+</head>
+  <body class="bg-fixed bg-1"  onload="startTime()">
+<!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+   <div class="main-container">
+    <div class="main wrapper clearfix">
+      <!-- Header Start -->
+        <header id="header">
+            <div id="logo">
+                <h2>
+                   Krishna M
+                </h2>
+                <h4>
+                    Student
+                </h4>
+            </div>
+        </header>
+        <!-- Header End -->
+        <!-- Main Tab Container -->
+        <div id="tab-container" class="tab-container">
+          <!-- Tab List -->
+            <ul class='etabs'>
+                <li class='tab' id="tab-about">
+                  <a href="#about"><i class="icon-user"></i><span> About Me</span></a>
+                </li>
+                <li class='tab'>
+                  <a href="#resume"><i class="icon-file-text"></i><span> Resume</span></a>
+                </li>
+                <li class='tab'>
+                  <a href="#contact"><i class="icon-envelope"></i><span> Contact</span></a>
+                </li>
+            </ul>
+          <!-- End Tab List -->
+            <div id="tab-data-wrap">
+              <!-- About Tab Data -->
+                <div id="about">
+                    <section class="clearfix">
+                        <div class="g2">
+                            <div class="photo">
+                                <img src="images/mmk.jpg" alt="Krishna">
+                            </div>
+                            <div class="info">
+                                <h2>
+                                    Krishna M
+                                </h2>
+                                <h4>
+                                    Student
+                                </h4>
+                                <p>
+                                    Exceptionally creative software developer. Implemented projects through complete Software development Life Cycle using advanced methodologies like TDD and Agile/Scrum. Exceptional interpersonal skills with the desire to learn new technologies and tools.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="g1">
+                            <div class="main-links sidebar">
+                                <ul>
+                                    <li>
+                                        <a href="#resume">View My Resume</a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact">Hire me for your next project</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="break"></div>
+                        <div class="contact-info">
+                          <div class="g1">
+                            <div class="item-box clearfix">
+                              <i class="icon-envelope"></i>
+                              <div class="item-data">
+				<h3>
+                                <div id="email" onclick="showhide()">show my email</div>
+				<script>
+				var show=false;
+				function showhide(){
+
+				if(show){
+				document.getElementById('email').innerHTML = "show my email";
+				show =false;
+				}else
+				{
+				var myemail="<a href='mailto:krishna.techie9"+"@"+"gmail.com'>krishna.techie9" + "@" + "gmail.com</a>";			
+				document.getElementById('email').innerHTML = myemail;
+				show = true;
+				}
+				}
+				</script>
+				</h3>
+                                <p>Email Address
+				</p>
+				</div>
+                             </div>
+                          </div>
+                          <div class="g1">
+                            <div class="item-box clearfix">
+                              <i class="icon-facebook"></i>
+                              <div class="item-data">
+                                <h3><a href="http://fb.me/krishna">krishna</a></h3>
+                                <p>Facebook Profile</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="g1">
+                            <div class="item-box clearfix">
+                              <i class="icon-twitter"></i>
+                              <div class="item-data">
+                                <h3><a href="http://twitter.com/imkrishna">@imkrishna</a></h3>
+                                <p>Twitter Handle</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </section><!-- content -->
+                </div>
+              <!-- End About Tab Data -->
+              <!-- Resume Tab Data -->
+                <div id="resume">
+                    <section class="clearfix">
+                        <div class="g2">
+                            <h3>
+                                Work Experience
+                            </h3>
+                            <ul class="no-list work">
+                                <li>
+                                    <h5>
+                                        University of Dayton IT services, Ohio, USA— Software Development Assistant
+                                    </h5><span class="label label-info">(August 2017- May2018)</span>
+                                        <p>
+                                      		Exposure to Software Development and Automation using Agile software development life cycle methodology.</p>
+					<p>
+				      		Attend Scrum related meetings (daily standup/ Planning/Retrofit), discuss the feasibility, estimation of requirements and keep the Scrum backlog Up to date during sprint cycles.</p>
+					<p>
+				      		Developed Responsive web pages using HTML5, CSS3, Bootstrap, JavaScript and jQuery with emphasis on cross browser functionality.</p>
+					<p>
+				      		Designed the back-end processing of the form data using MVC framework.</p>
+					<p>
+				      		Using RESTful services, sending HTTP requests to the Server, retrieving the JSON format data, and parsing it.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h5>
+                                        Caliber Technologies Private Ltd. , India— Application developer Intern
+                                    </h5><span class="label label-info">(Dec 2015 – May 2016)</span>
+                                    <p>
+                                        	Involved in developing, enhancing and redesigning new and existing web-based applications focusing on reporting, harnesses and API development.</p>
+					<p>
+						Developed the front-end of the web-application using PHP, JavaScript and jQuery. </p>
+					<p>
+						Developed the back-end of the web-application using MySQL.</p>
+					<p>
+						Provisioned and configured a Linux host, and deployed the web application on the host.</p>
+					<p>
+						Developed website mock-ups to ensure quality control and client satisfaction before project deployment phase.
+
+                                    </p>
+                                </li>
+                                
+                            </ul>
+                            <h3>
+                                Education
+                            </h3>
+                            <ul class="no-list work">
+                                <li>
+                                    <h5>
+                                        University of Dayton
+                                    </h5><span class="label label-success">2016-2018</span>
+                                    <p>
+                                        Master's degree majoring in Computer Science.<br> GPA = 3.92/4.00
+                                    </p>
+                                </li>
+                                <li>
+                                    <h5>
+                                        Gandhi Institute of Technology and Management
+                                    </h5><span class="label label-warning">2012-2016</span>
+                                    <p>
+                                        Bachelor's degree majoring in Electronics and Instrumentation Engineering.<br> GPA = 3.56/4.00
+                                    </p>
+                                </li>
+			 <h3>
+			     Projects
+			</h3>
+			 <ul class="project work">
+			 	<li>
+				   <h5>
+				        Flyer Blog Web Application 
+ 				   </h5><span class="label label-success">March 2017-May 2017 </span>
+				   <p>
+                                      		Developed MyBlog web application using PHP and CSS. Used MySQL for database</p>
+					<p>
+				      		Secured it from threats such as Buffer over Flow, Cross Site Scripting, Cross Site Request Forging, Data Injection and Sensitive Data Exposure.
+
+                                   </p>	
+				</li>
+				<li>
+				   <h5>
+				        Hospital Database Management System
+ 				   </h5><span class="label label-success">November 2016 - December 2016</span>
+				   <p>
+                                        	In this project we had to design and implement the database for a Hospital which should also have an interactive front end web application.<br><br>
+				                For Frontend we used technologies like ASP.NET(MVC pattern) , Entity Framework(To access the database),SQL Management Studio and for backend we used Oracle express edition 11g. 
+                                   </p>
+				</li>
+				<li>
+				   <h5>
+				        Movie Hunt Android Application 
+ 				   </h5><span class="label label-success">June 2016 – Aug 2016</span>
+			           <p>
+                                      		Implemented Movie Hunt Android Application using java in Android Studio.</p>
+				      <p>
+						It sorts the movies with highest to lowest rating and provides information about each movie with appropriate links to book tickets if available in theaters.
+                                   </p>
+				</li>
+				<li>
+				   <h5>
+				        Mini Facebook Database
+ 				   </h5><span class="label label-success">May 2017 – June 2017 </span>
+				   <p>
+                                      	Developed MyBlog web application using PHP and CSS. Used MySQL for database.</p>
+					<p>
+				      	Secured it from threats such as Buffer over Flow, Cross Site Scripting, Cross Site Request Forging, Data Injection and Sensitive Data Exposure.
+                                   </p>	
+				</li>
+                            </ul>
+                        </div>
+                        <div class="g1">
+                            <div class="sidebar">
+                                <h3>
+                                    Skills
+                                </h3>
+                                <h5>
+                                    Software's and Tool's
+                                </h5>
+                                <div class="meter emerald">
+                                    <span style="width: 90%"><span>GIT</span></span>
+                                </div>
+                                <div class="meter carrot">
+                                    <span style="width: 90%"><span>Amazon Web Services</span></span>
+                                </div>
+                                <div class="meter wisteria">
+                                    <span style="width: 75%"><span>Jira</span></span>
+                                </div>
+                                <div class="meter sunflower">
+                                    <span style="width: 70%"><span>Oracle 11g Database</span></span>
+                                </div>
+                                <div class="meter midnight">
+                                    <span style="width: 75%"><span>Microsoft Visual Studio</span></span>
+                                </div>
+                                <div class="meter pomengrate">
+                                    <span style="width: 90%"><span>Android Studio</span></span>
+                                </div>
+                                <div class="meter asbestos">
+                                    <span style="width: 85%"><span>Microsoft SQL Server</span></span>
+                                </div>
+                                <div class="break"></div>
+                                <h5>
+                                    Operating Systems
+                                </h5>
+                                <div class="meter emerald">
+                                    <span style="width: 90.3%"><span>Microsoft Windows OS</span></span>
+                                </div>
+                                <div class="meter carrot">
+                                    <span style="width: 80%"><span>Linux OS</span></span>
+                                </div>
+                                <div class="meter wisteria">
+                                    <span style="width: 70%"><span>Apple OS X</span></span>
+                                </div>
+				<div class="meter asbestos">
+                                    <span style="width: 85%"><span>Android OS</span></span>
+                                </div>
+                                <div class="break"></div>
+                                <h5>
+                                    Programming Languages
+                                </h5>
+                                <div class="meter emerald">
+                                    <span style="width: 70%"><span>HTML/CSS</span></span>
+                                </div>
+                                <div class="meter carrot">
+                                    <span style="width: 80%"><span>MySql</span></span>
+                                </div>
+                                <div class="meter wisteria">
+                                    <span style="width: 65%"><span>jQuery/JavaScript</span></span>
+                                </div>
+                                <div class="meter sunflower">
+                                    <span style="width: 75%"><span>Java</span></span>
+                                </div>
+				<div class="meter midnight">
+                                    <span style="width: 75%"><span>PHP</span></span>
+                                </div>
+                                <div class="meter pomengrate">
+                                    <span style="width: 90%"><span>Android Studio</span></span>
+                                </div>
+                                <div class="meter asbestos">
+                                    <span style="width: 82%"><span>C#</span></span>
+                                </div>
+				<div class="meter wisteria">
+                                    <span style="width: 85%"><span>C++</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+              <!-- End Resume Tab Data -->
+              <!-- Contact Tab Data -->
+                <div id="contact">
+                    <section class="clearfix">
+                       <div class="g1">
+                         <div class="sny-icon-box">
+                           <div class="sny-icon">
+                              <i class="icon-globe"></i>
+                            </div>
+                            <div class="sny-icon-content">
+                              <h4>My Address</h4>
+                              <p>345 Firwood drive, Apt#2B, Dayton ,Ohio-45419</p>
+                            </div>
+                         </div>
+                       </div>
+                       <div class="g1">
+                         <div class="sny-icon-box">
+                           <div class="sny-icon">
+                              <i class="icon-phone"></i>
+                            </div>
+                            <div class="sny-icon-content">
+                              <h4>Mobile Number</h4>
+                              <p>+1(937)-949-0323</p>
+                            </div>
+                         </div>
+                       </div>
+                       <div class="g1">
+                         <div class="sny-icon-box">
+                           <div class="sny-icon">
+                              <i class="icon-user"></i>
+                            </div>
+                            <div class="sny-icon-content">
+                              <h4>About Me</h4>
+                              <p>I am a dedicated worker and have a strong work ethic, which enables me to coordinate multiple tasks simultaneously. </p>
+                            </div>
+                         </div>
+                       </div>
+                       <div class="break"></div>
+                       
+                    </section>
+                </div>
+              <!-- End Contact Data -->
+            </div>
+        </div>
+        <!-- End Tab Container -->
+	<footer>
+            <script> 
+			function startTime(){
+			document.getElementById('clock').innerHTML = new Date;
+			setTimeout(startTime,500);
+			}
+	    
+	    </script>
+           <div id="clock"></div>
+        </footer>
+        
+    </div><!-- #main -->
+</div><!-- #main-container -->
+
+
+
+</body>
+</html>

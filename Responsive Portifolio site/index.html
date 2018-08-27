@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <title>Create Your FREE My Portifolio Account</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="login.html">
+        <link rel="stylesheet" type="text/css" href="newpassword.html">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Krishna">
+</head>
+<body>
+    <h1 style="color:#008ae6;"><span class='notbold'> Create Your FREE My Portifolio Profile </span></h1>
+    <div id="signup">
+    <section id="information">
+        <h2 styles="font-size:100%" style="color:white;"> <span class='notbold'>Why Create an Account?</span></h2>
+
+                <p style="color:white;">If you're searching for next home, or just curious about the market there is better tool to help you quickly find homes that meet your needs and wants.</p>
+
+                <b><p style="color:white;">With an account you can:</p></b>
+
+                <p class="fa fa-home" style="color:white;" class="big">  Save your favorite listings</p><br>
+                <p class="fa fa-search" style="color:white;" class="big">  Save searches with your important parameters</p>
+                <p class="fa fa-certificate" style="color:white;" class="big">   Be notified of new listings that meet your criteria</p>
+                <p class="fa fa-bell" style="color:white;" class="big">    Be notified of changes to your saved listings such as a price reduction or when a &emsp; property goes of the market</p>
+                <p class="fa fa-check" style="color:white;" class="big">  Keep track of homes you have recently viewed</p> 
+    </section>
+    <aside id="signup-page">
+        <h3 style="color:#008ae6;font-size:30px"><span class='notbold'> Sign Up Today</span></h3>  
+            <form name="signup_form">   
+             <input type="text" style="height:20px;width:250px" name="firstname" placeholder="First Name*">
+             <input type="text" style="height:20px;width:250px;" name="lastname" placeholder="Last Name*"/><br>
+             <input type="tel" style="height:20px;width:250px" name="phone" placeholder="Phone"/>
+             <input type="email" style="height:20px;width:250px" name="email" placeholder="Email*"/>
+             <input type="password" style="height:20px;width:524px" name="password" placeholder="Create Password*"/><br>
+             <input type="checkbox" name="check" >
+             <label for="option">I am currently working with a Real Estate Firm Demo agent. </label><br>
+                 <select name="Select an Agent"  style="height:27px;width:528px;" >
+                     <option>Select an Agent</option>
+                     <option>Robin</option>
+                     <option>Sam</option>
+                     <option>Adam</option> 
+                 </select>
+             </form>
+             <div class="g-recaptcha" data-theme="light" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;" data-sitekey="6LedzGcUAAAAADMjgJtWyS3GsK6NNyEUKyA3cScZ"></div>
+             <center><button type="submit" name="createaccount-button" onclick="myFunction()">CREATE ACCOUNT</button></center>
+             <div class="line"></div><br>
+             <center><p style="font-size:12px;margin-top: 0px; margin-bottom: 0px;">Already have an account?  <a style="color:#008ae6;font-size:12px" href="login.html">Sign in here</a> </p>
+             <a href="newpassword.html" style="color:#008ae6;font-size:12px;margin-bottom: 0px;margin-top: 0px;">Forgot your password?</a></center>
+    </aside>
+    </div>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script> 
+        function myFunction()
+        {
+            var a = document.forms["signup_form"]["firstname"].value;
+            var b = document.forms["signup_form"]["lastname"].value;
+            var c = document.forms["signup_form"]["email"].value;
+            var d = document.forms["signup_form"]["password"].value;
+            if (a == "" || b == "" || c == "" || d == "") 
+            {
+            alert("Required fields must be filled out");
+            return false;
+            }
+        
+            else      
+            {
+                alert("Welcome!!");
+            }
+        }
+    </script>
+</body>
+</html>

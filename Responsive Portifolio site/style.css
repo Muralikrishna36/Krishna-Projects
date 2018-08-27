@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+*
+{
+    font-family: 'Raleway', sans-serif;  
+}
+#signup
+{
+    width: 1225px;
+    margin: 0px auto;
+    
+}
+
+#information
+{
+    float: left;
+    width: 575px;
+    height: 480px;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    background-image: url(Blue.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#login-page
+{
+    width: 1225px;
+    margin: 0px auto;
+    float: left;
+    width: 625px;
+    height: 500px;
+    padding-left: 20px;
+    
+}
+#signup-page
+{
+    float: right;
+    width: 625px;
+    height: 500px;
+    padding-left: 20px;
+}
+input[type=checkbox] + label
+{
+    display: inline-block;
+    margin: 0.2px;
+}
+
+button
+{
+    background-color: #008ae6;
+    align-content: center;
+    height:35px;width:350px;
+    border-radius: 2px;
+    border: none;
+    color:white;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.g-recaptcha
+{
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-left: 170px;
+    width: 40%;
+    padding: 10px;
+    
+}
+input[type="email"]::-webkit-input-placeholder {
+color: red !important;
+}
+input[type="text"]::-webkit-input-placeholder {
+color: red !important;
+}
+input[type="password"]::-webkit-input-placeholder {
+color: red !important;
+}
+ .line
+{
+    width: 625px;
+    height: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: 0.5px solid black;
+}
+.notbold
+{
+    font-weight:normal;
+}
+.big 
+{
+    line-height: 1.8;
+}
+input 
+{ 
+    margin-bottom: 10px; 
+    margin-right: 15px;
+}
+h1
+{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding: 17px;
+}
+ 
+@media screen and (max-width:900px)
+{
+    #signup
+    {
+        float: none;
+        width:100%;
+    } 
+     #signup-page
+    {
+        float: none;
+        width: 100%;
+    }
+    #information
+    {
+        float: none;
+        width: 100%;
+        
+    }
+    .p
+    {
+        padding-right: 5px;
+        text-align: center;
+    }
+    button
+    {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .g-recaptcha 
+    {
+        transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;
+        margin-left: 100px; 
+    }
+    
+}
