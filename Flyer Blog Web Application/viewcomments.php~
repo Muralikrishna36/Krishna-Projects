@@ -5,7 +5,21 @@
 body {
         /*background-image: url("bcg.jpg");*/
 } 
- 
+.button {
+    border-radius: 12px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 250px;
+    float:left;
+} 
 </style>
 <?php
 	$postid = $_POST['postid'];
@@ -33,11 +47,11 @@ body {
 				$sql1 = "SELECT * FROM comments WHERE postid='$postid';";
 				$comments = $mysqli->query($sql1);
 				if($comments->num_rows>0){
-				echo "Comments:<br>";
+				echo "<br>"."<br>"."<br>"."Comments:<br>";
 				while($row1 = $comments->fetch_assoc()){
 					$commentid =$row1['commentid'];
 					//echo "commentid = " .$commentid."<br>";
-					echo  '<span style="color: Black; font-size: 20px;">'.htmlentities($row1['commenter']) . "<br>".htmlentities($row1['time']). "<br>Title= ". htmlentities($row1['title']). "<br>Content=" . htmlentities($row1['content'])."<br>";
+					echo  "<br>"."<br>".'<span style="color: Black">'.htmlentities($row1['commenter']) . "<br>".htmlentities($row1['time']). "<br>Title= ". htmlentities($row1['title']). "<br>Content=" . htmlentities($row1['content'])."<br>";
 					
 					echo '<form action="deletecomment.php" method="POST" class="form login"><input type="hidden" name="commentid" value="'.$commentid.'" >' . '
 				<button class ="button" type="Post">

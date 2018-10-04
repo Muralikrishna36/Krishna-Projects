@@ -8,13 +8,13 @@ body {
 </style>
 <?php
 	require "auth.php";
-	$secrettoken = $_POST["secrettoken"];
+	//$secrettoken = $_POST["secrettoken"];
 	//echo "debug>\$secrettoken = $secrettoken <br>\$_SESSION["nocsrftoken"]= ". $_SESSION["nocsrftoken"];
 	//echo $secrettoken;
-	if(!isset($secrettoken) or ($secrettoken != $_SESSION["nocsrftoken2"])){
-	echo "Cross site forging detected!!";
-	die();
-	}
+	//if(!isset($secrettoken) or ($secrettoken != $_SESSION["nocsrftoken2"])){
+	//echo "Cross site forging detected!!";
+	//die();
+	//}
 	function addcomment($commentid,$title,$content,$time,$commenter,$postid){
 
 		$commentid=mysql_real_escape_string($commentid);
@@ -29,9 +29,9 @@ body {
 		global $mysqli;
 		$result = $mysqli->query($sql);
 		if($result==TRUE){
-		echo "new comment has been posted<br>";
+		echo "New comment has been posted<br>";
 		}else{
-		echo "error adding comment :". $mysqli->error;    
+		echo "Error adding comment :". $mysqli->error;    
     		}
 	}
 

@@ -1,9 +1,8 @@
-<style>
+<!--<style>
 body {
         background-image: url("bcg.jpg");
 } 
- 
-</style>
+</style>-->
 <?php
 	$postid = $_POST['postid'];
 	$mysqli= new mysqli('localhost', 'SIAD_lab7', 'secretpass', 'SIAD_lab7');
@@ -16,18 +15,18 @@ body {
 	global $mysqli;
 		$result = $mysqli->query($sql);
 		if($result==TRUE){
-		echo " comments have been deleted<br>";
+		echo " Comments have been deleted<br>";
 		}else{
-		echo "error deleting comment :". $mysqli->error;    
+		echo "Error deleting comment :". $mysqli->error;    
     		}
 	$sql = "DELETE FROM posts WHERE postid='$postid';";
 	//echo "sql=$sql";
 	global $mysqli;
 		$result = $mysqli->query($sql);
 		if($result==TRUE){
-		echo " post has been deleted<br>";
+		echo " Post has been deleted<br>";
 		}else{
-		echo "error deleting post :". $mysqli->error;    
+		echo "Error deleting post :". $mysqli->error;    
     		}
 	
 ?>

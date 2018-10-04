@@ -1,9 +1,9 @@
-<style>
+<!--<style>
 body {
         background-image: url("bcg.jpg");
 } 
  
-</style>
+</style>-->
 <?php
 	$commentid = $_POST['commentid'];
 	$mysqli= new mysqli('localhost', 'SIAD_lab7', 'secretpass', 'SIAD_lab7');
@@ -16,9 +16,9 @@ body {
 	global $mysqli;
 		$result = $mysqli->query($sql);
 		if($result==TRUE){
-		echo " comments have been deleted<br>";
+		echo " Comments have been deleted<br>";
 		}else{
-		echo "error deleting comment :". $mysqli->error;    
+		echo "Error deleting comment :". $mysqli->error;    
     		}
 	
 ?>

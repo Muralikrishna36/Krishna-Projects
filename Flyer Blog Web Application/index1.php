@@ -22,7 +22,7 @@ body {
 }
 </style>
 <div align = "right">
-<br><img src="flyer.jpg" alt="Flyer blog img" align="left" width="1550" height="500"><br>
+<br><img src="flyer.png" alt="Flyer blog img" align="left" width="1550" height="500"><br>
 <form action="newuserform.php" method="POST" class="form login">
 <button class ="button" type="submit">
 Sign up!

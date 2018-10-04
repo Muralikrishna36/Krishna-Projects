@@ -8,7 +8,7 @@ body {
     background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 70px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -16,8 +16,6 @@ body {
     margin: 4px 2px;
     cursor: pointer;
     width: 100px;
-    
-
 }
 
 form {
@@ -39,8 +37,11 @@ Username:<input type="text"  name="username" placeholder= "Username*" required p
 Password: <input type="password"   name="password" placeholder= "Password*"  required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"/> <br><!--required pattern="(?=.*[A-Z]).{6,}"-->
 <br><button  class ="button" type="submit">Login</button>
 </form>
+<?
+echo '<center>'."New User?".'</center>';
+?>
 <form action="newuserform.php" method="POST" class="form login">
-<button class ="button" type="submit" >Signup!</button>
+<button class ="button" type="submit"  >Signup!</button>
 
 </html>
 
