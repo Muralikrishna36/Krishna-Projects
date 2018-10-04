@@ -18,10 +18,11 @@ body {
     margin: 4px 2px;
     cursor: pointer;
     width: 250px;
+    float: left;
 }
 </style>
 <div align = "right">
-<br><img src="flyer.jpg" alt="Flyer blog img" align="left" width="1500" height="500"><br>
+<br><img src="flyer.jpg" alt="Flyer blog img" align="left" width="1550" height="500"><br>
 <form action="newuserform.php" method="POST" class="form login">
 <button class ="button" type="submit">
 Sign up!

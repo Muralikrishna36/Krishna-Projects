@@ -1,6 +1,6 @@
 <style>
 body {
-        background-image: url("bcg.jpg");
+         /*background-image: url("bcg.jpg");*/
 } 
  
 .button {
@@ -16,6 +16,7 @@ body {
     margin: 4px 2px;
     cursor: pointer;
     width: 100px;
+    
 
 }
 
@@ -39,7 +40,7 @@ Password: <input type="password"   name="password" placeholder= "Password*"  req
 <br><button  class ="button" type="submit">Login</button>
 </form>
 <form action="newuserform.php" method="POST" class="form login">
-<button class ="button" type="submit" >Signup!</button>
+<button class ="button" type="submit" float="left" >Signup!</button>
 
 </html>
 

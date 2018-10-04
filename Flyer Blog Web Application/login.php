@@ -16,6 +16,7 @@ body {
     margin: 4px 2px;
     cursor: pointer;
     width: 100px;
+    
 
 }
 
